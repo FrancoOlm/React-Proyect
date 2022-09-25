@@ -1,0 +1,10 @@
+.cartBtn{
+    width: 80px;
+    height: 50px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 15px;
+    background-color: rgb(72, 143, 88);
+}

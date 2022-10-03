@@ -21,3 +21,9 @@ nav{
     background-color: rgb(95, 160, 110);
 
 }
+
+.btn:hover{
+    background-color: rgb(72, 143, 88);
+    border-radius: 20px;
+    border: solid 2px white;
+}

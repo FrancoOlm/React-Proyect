@@ -3,9 +3,9 @@ import CartIcon from './CartIcon.svg'
 
 const CartWidget =() =>{
     return(
-        <div className='cartBtn'>
+        <div className='cartBtnContainer'>
             <button className='cartBtn'>
-            <img src={CartIcon}></img>
+            <img src={CartIcon} alt="asd"/>
             10
             </button>
         </div>

@@ -1,18 +1,31 @@
-const Counter =() =>{
-    let count = 0
+import { useState } from "react"
+import  './counter.css'
+const Counter =({onAdd}) =>{
+    const [count, setCount] = useState(0)
+    
+    let stock = 10
     const sumar =()=>{
-        count ++
-        console.log(count)
+        if(count !== stock ) {
+            setCount(count+1)
+            stock = stock - count
+            console.log("Stock actual:" +stock)
+        }
     }
     const restar =()=>{
-        count--
+        if(count > 0) {
+            setCount (count -1)
+            stock = stock - count
+            console.log("Stock actual:" +stock)
+        }
     }
     return(
-        <div>
-            <h1>Contador</h1>
-            <h2>{count}</h2>
-            <button onClick={sumar}>Sumar</button>
-            <button onClick={restar}>restar</button>
+        <div className="counterContainer">
+            <div className="contador">
+                <button className="btnSumRes" onClick={sumar} >+</button>
+                |<h2>{count}</h2>|
+                <button className="btnSumRes" onClick={restar}>-</button>
+            </div>
+            <button className="btnAgregarAlCarrito" onClick={onAdd}>Agregar al carrito</button>
         </div>
     )
 }

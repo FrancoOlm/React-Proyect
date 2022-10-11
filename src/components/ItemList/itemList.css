@@ -1,0 +1,8 @@
+.caja{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+
+}

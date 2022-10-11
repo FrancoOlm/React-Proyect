@@ -1,0 +1,30 @@
+.counterContainer{
+    width: 200px;
+    margin: 0 auto;
+}
+.countTitle{
+    display: inline;
+    color: rgb(223, 232, 225);
+}
+.contador{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30px;
+    border: solid 1px grey;
+    background-color: rgb(188, 188, 189);
+    border-radius: 25px;
+}
+
+.btnAgregarAlCarrito{
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(104, 201, 127);
+    box-shadow: 0px 0px 10px 0px;
+}
+.btnSumRes{
+    font-size: 15px;
+}

@@ -1,15 +1,21 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import Counter from './components/Counter/Counter';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.js';
+import {BrowserRouter, Routes,Route} from 'react-router-dom'
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <ItemListContainer greeting={'Bienvenidos a Budgie Tech'}/>
-      <Counter/>
+      <BrowserRouter>
+        <Navbar/>
+          <Routes>
+            <Route path='/' element={<ItemListContainer greeting={'Bienvenidos a Budgie Tech'}/>}/>
+            <Route path='/category/:categoryId' element={<ItemListContainer />} />
+            <Route path='/detail/:productId' element={<ItemDetailContainer/>}/>
+          </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,10 +1,10 @@
 .cartBtn{
+    box-sizing: border-box;
     width: 80px;
     height: 50px;
     font-size: 15px;
     border: none;
     cursor: pointer;
-    margin-right: 10px;
     border-radius: 15px;
     background-color: rgb(72, 143, 88);
 }
@@ -12,5 +12,5 @@
     border: solid 2px white;
 }
 .cartBtnContainer{
-    width: 80px;
+    width: 100px;
 }

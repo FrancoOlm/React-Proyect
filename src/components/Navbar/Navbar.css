@@ -1,9 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+.logoContainer{
+    width: 120px;
+}
 .logo{
     width: 100px;
 }
 
 nav{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,7 +24,10 @@ nav{
     border: none;
     margin-left: 20px;
     cursor: pointer;
+    border-radius: 20px;
+    border: solid 2px rgb(95, 160, 110);
     background-color: rgb(95, 160, 110);
+    transition: 0.5s;
 
 }
 
@@ -26,4 +35,5 @@ nav{
     background-color: rgb(72, 143, 88);
     border-radius: 20px;
     border: solid 2px white;
+    transition: 0.5s;
 }

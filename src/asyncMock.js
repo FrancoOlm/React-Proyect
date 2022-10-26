@@ -11,6 +11,7 @@ const productos =[
     architecture:'-1080p gaming',
     accelerator:'-Dual-X Cooling NITRO Glow Quick Connect,',
     categoria : 'NITRO' ,
+    wallpaper:'https://media.cdn.sapphiretech.com.cn/-/media/sites/sapphire/components/productimagebanner/nitro_productimagebanner_1920x1060_012419.ashx?v=969edccd86724206a31e6543e03da0ae'
     },
 
     {
@@ -25,6 +26,7 @@ const productos =[
     architecture:'-RDNA™ 2 Architecture',
     accelerator:'-Ray Accelerator: 32',
     categoria : 'NITRO' ,
+    wallpaper:'https://media.cdn.sapphiretech.com.cn/-/media/sites/sapphire/components/productimagebanner/nitro-pulse-rx-6000-series/productimagebanner_nitro_rx6650xt_1920x1060_0322_b_1apr22.ashx?v=0a48bbeb523a4e87b5f659ee69755ba2'
     },
     {
         id:'3',
@@ -37,6 +39,7 @@ const productos =[
         processors:'-Stream Processors: 2560 4K@120Hz',
         architecture:'-Tri-X Cooling Technology',
         categoria : 'NITRO' ,
+        wallpaper:'https://media.cdn.sapphiretech.com.cn/-/media/sites/sapphire/components/productimagebanner/productimagebanner_nitro_rx5700xt_eha_2020_1920x1060.ashx?v=884056307bc14f939ab83d4a4eb028ea'
     },
     {
         id: '4',
@@ -50,6 +53,7 @@ const productos =[
         architecture:'-RDNA™ 2 Architecture',
         accelerator:'-Ray Accelerator: 40',
         categoria : 'PULSE' ,
+        wallpaper:'https://media.cdn.sapphiretech.com.cn/-/media/sites/sapphire/components/productimagebanner/nitro-pulse-rx-6000-series/productimagebanner_pulse_rx6700xt_1920x1060_0221_25feb.ashx?v=14c20cec4bad4513acd4a9ee772ed677'
     },
     {
         id: '5',
@@ -63,6 +67,7 @@ const productos =[
         architecture:'-RDNA™ 2 Architecture',
         accelerator:'-Ray Accelerator: 60',
         categoria : 'PULSE',
+        wallpaper:'https://media.cdn.sapphiretech.com.cn/-/media/sites/sapphire/components/productimagebanner/nitro-pulse-rx-6000-series/productimagebanner_pulse_rx6800_1920x1060_1020.ashx?v=983c157a6ba546c7bd4298895ed3fccf'
     },
     {
         id: '6',

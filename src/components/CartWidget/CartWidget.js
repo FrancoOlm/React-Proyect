@@ -1,12 +1,17 @@
 import './CartWidget.css'
 import CartIcon from './CartIcon.svg'
+import { useContext } from 'react';
+import { CartContext } from '../../CartContext/CartContext';
+import { Link, useNavigate } from 'react-router-dom'
 
 const CartWidget =() =>{
+    const { totalProductsAdded} = useContext(CartContext) 
+    const navigate = useNavigate()
     return(
         <div className='cartBtnContainer'>
-            <button className='cartBtn'>
+            <button to='/cart' className='cartBtn' onClick={()=> navigate('/cart')}>
             <img src={CartIcon} alt="asd"/>
-            10
+            <span>{totalProductsAdded}</span>
             </button>
         </div>
     )

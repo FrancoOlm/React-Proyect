@@ -1,12 +1,14 @@
 import  '../ItemDetail/ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
 import { useCart } from '../../CartContext/CartContext'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { NotificationContext } from '../../services/NotificationService/NotificationService'
 
 const ItemDetail = ({id, nombre, precio, categoria, img , stock, descripcion,wallpaper,memory,processors,architecture,accelerator}) =>{
     const [goToCart, setGoToCart] = useState (false)
     const {addProduct} = useCart ();
+    const { setNotification } = useContext(NotificationContext)
     const onAdd = (quantity) => {
         const productToAdd = {
             id,
@@ -14,10 +16,12 @@ const ItemDetail = ({id, nombre, precio, categoria, img , stock, descripcion,wal
             categoria,
             precio,
             descripcion,
-            quantity
+            quantity,
+            img
         }
         setGoToCart(true);
         addProduct (productToAdd, quantity);
+        setNotification('success', `✅ Se agrego correctamente ${quantity} ${nombre}`) 
     }
     return(
         <div className='ContainerGeneral'>
@@ -39,13 +43,13 @@ const ItemDetail = ({id, nombre, precio, categoria, img , stock, descripcion,wal
                     <li>{accelerator}</li>
                 </ul>
                 <div className='Contador'>
-                    <p>${precio}</p>
+                    <p className='precio'>${precio}</p>
                     {goToCart
                 ?
                     <div className='btnContainerr'>
                         <Link className='btnComenzar' to='/cart'>Ir al carrito</Link>
                     </div>
-                :<ItemCount onAdd={onAdd} stock={stock}/>
+                : stock !== 0?<ItemCount onAdd={onAdd} stock={stock}/> : <p className='fstock'>Fuera de stock</p>
                     }
                 </div>
             </div>

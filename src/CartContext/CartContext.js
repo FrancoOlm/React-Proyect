@@ -68,7 +68,7 @@ return (
 	totalToPay,
 	cart ,
 	}}>
-		{children}
+	{children}
 </CartContext.Provider> 
 )
 }

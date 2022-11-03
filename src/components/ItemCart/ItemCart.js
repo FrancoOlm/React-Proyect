@@ -1,19 +1,21 @@
 
 import React from 'react'
 import '../ItemCart/ItemCart.css'
-import '../../asyncMock'
 import { useCart} from '../../CartContext/CartContext'
+import { useContext } from 'react'
+import { NotificationContext } from '../../services/NotificationService/NotificationService'
 
 const ItemCart = ({product}) => {
     const {removeProduct} = useCart ();
-
+    const { setNotification } = useContext(NotificationContext)
 return (    
     <div className='cartContainer'>
-
+        <div className='productImg'>
+        <img src={product.img}/>
+        </div>
         <div className='productName'>
             <h2>Producto</h2>
             <h1 className="nombre">{product.nombre}</h1>
-            <img src={product.img}/>
         </div>
 
         <div className='productU'>
@@ -27,7 +29,8 @@ return (
             <p className="precioU">Subtotal: ${product.quantity * product.precio}</p>
         </div>
 
-        <button className='BtnEliminar' onClick={()=>removeProduct(product.id)}>eliminar
+        <button className='BtnEliminar' onClick={()=>removeProduct(product.id) || setNotification('',`❌ Se elimino el producto del carrito`)}>eliminar
+        
         </button>
     </div>
 )

@@ -1,9 +1,10 @@
 .cartContainer {
+    box-sizing: border-box;
     display: flex;
     justify-content:space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: 95vw;
+    width: 90vw;
     margin: 20px auto;
     background: rgb(7,112,25);
     background: linear-gradient(90deg, rgba(7,112,25,1) 0%, rgba(26,168,49,0.9489559164733179) 78%, rgba(27,133,37,1) 98%);
@@ -26,11 +27,19 @@
     width: 450px;
     margin: 5px 5px 5px 5px;
 }
-.productName img{
+.productImg{
     width: 200px;
+    height: 120px;
+    background-color: antiquewhite;
+}
+.productImg img{
+    width: 180px;
 }
 .productU{
     width: 300px;
+}
+.productU h2{
+    margin-bottom: 20px;
 }
 .productTotal{
     width: 220px;
@@ -41,6 +50,7 @@
     width: 80px;
     height: 70px;
     transition: 0.3s;
+    border-style: none;
 }
 .BtnEliminar:hover{
     background-color: rgb(243, 47, 47);

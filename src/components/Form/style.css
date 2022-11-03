@@ -1,0 +1,40 @@
+.myForm1{
+    display: flex;
+    justify-content: center;
+    border: solid 1px rgb(4, 0, 8);
+    background-color: rgb(175, 179, 175);
+    border-radius: 5px;
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    color: rgb(15, 14, 14);
+    font-size: 20px;
+    font-weight: 500;
+}
+.myForm1{
+    display: flex;
+    flex-direction: column;
+}
+.form-label {
+    margin: 10px;
+}
+.form-input{
+    margin: 0 auto;
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border-bottom: solid rgb(65, 173, 14);
+}
+
+.submit{
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.submit:hover{
+    background-color: rgb(65, 173, 14);
+}

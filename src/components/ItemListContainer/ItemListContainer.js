@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react"
-import { getProducts, getProductsByCategory } from "../../asyncMock"
 import ItemList from "../ItemList/ItemList"
 import {useParams} from 'react-router-dom'
 import './spiner.css'
+import { getDocs, collection, query, where} from "firebase/firestore"
+import { dataBase } from "../../services/firebase/firebase"
 
 const ItemListContainer =({greeting }) =>{
     const [products, setProductos] = useState([])
@@ -13,15 +14,21 @@ const ItemListContainer =({greeting }) =>{
     useEffect(()=>{
         setCargando(true)
 
-        const asyncMockCategory = categoryId ? getProductsByCategory : getProducts
+        const collectionRef = categoryId ? query(collection(dataBase, "productos"), where('categoria', '==', categoryId)) : collection(dataBase, "productos")
 
-        asyncMockCategory(categoryId).then(respuesta =>{
-            setProductos(respuesta)
+        getDocs(collectionRef).then(respuesta =>{
+            const productosAdaptados = respuesta.docs.map(doc =>{
+                const data = doc.data()
+                
+                return {id: doc.id, ...data}
+                
+            })
+            setProductos(productosAdaptados)
         }).finally (()=>{
             setCargando(false)
         })
     },[categoryId])
-    
+
     if(cargando){
         return ( 
             <div className="loader">Loading...</div>

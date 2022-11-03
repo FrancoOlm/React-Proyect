@@ -2,12 +2,10 @@ import { Link } from 'react-router-dom';
 import {CartContext} from '../../CartContext/CartContext'
 import { useContext } from "react"
 import ItemCart from "../ItemCart/ItemCart";
-import '../../asyncMock'
 import '../ItemCart/ItemCart.css'
-import { getProducts } from '../../asyncMock';
 
 const Cart = () => {
-    const {cart,totalToPay,totalProducts,} = useContext (CartContext);
+    const {cart,totalToPay,totalProducts,clearCart} = useContext (CartContext);
 
     console.log (cart);
     if (cart.length === 0)
@@ -27,7 +25,9 @@ const Cart = () => {
             <span id="contador">{totalProducts}</span>
             {cart.map(products => <ItemCart key={products.id} product = {products}/>)}
             <p>Total a Pagar: ${totalToPay}</p>
-            <h3>Generar Orden</h3>
+            <Link to='/checkout' className='Option'>Checkout</Link>
+            <button onClick={clearCart}>Limpiar carrito</button>
+    
         </div>
     )
 }

@@ -2,7 +2,6 @@ import Swal from "sweetalert2";
 import { useState, createContext } from "react";
 import './style.css'
 
-
 export const FormData = createContext({
     name:"",
     surname:"",
@@ -20,8 +19,6 @@ const ClientForm = ({completoDatos}) => {
     const [email, setEmail] = useState("");
     const [checkEmail, setCheckEmail] = useState("");
     const [phone, setPhone] = useState("");
-
-
 
 
 const submit = (e) => {
@@ -76,6 +73,7 @@ const submit = (e) => {
                 
                 <label className="form-label">Telefono</label>
                 <input value={phone}onChange={(e) => setPhone(e.target.value)} type="number" className="form-input"   placeholder="Teléfono"required />
+
                 <button className="submit" onClick = {submit} >Enviar</button>
             </div>
         </form>

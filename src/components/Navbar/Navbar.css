@@ -6,6 +6,11 @@
 }
 .logo{
     width: 100px;
+    transition: 0.5s;
+}
+.logo:hover{
+    transition: 0.5s;
+    transform: scale(1.05);
 }
 
 nav{

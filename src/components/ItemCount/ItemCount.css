@@ -25,8 +25,12 @@
     height: 40px;
     border-radius: 5px;
     border: solid 1px;
-    background-color: rgb(104, 201, 127);
     cursor: pointer;
+    transition: 0.3s;
+}
+.btnAgregarAlCarrito:hover{
+    transition: 0.3s;
+    background-color: rgb(104, 201, 127);
 }
 .btnSumRes{
     width: 20px;

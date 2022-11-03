@@ -68,20 +68,59 @@
     height: 100%;
     text-decoration: none;
     color: rgb(238, 234, 234);
-
 }
 .btnContainerr{
-    display: inline-block;
-    border: solid grey 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     border-radius: 25px;
     margin-top: 10px;
     width: 200px;
     height: 45px;
     background-color: rgb(16, 112, 29);
+    margin-top: 50px;
+}
+.boxBtn{
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 120px;
+    margin: 0 auto;
 }
 .btnComenzar:hover{
     color: rgb(252, 248, 248);
     filter: brightness(2);
     box-shadow: 0px 0px 16px 0px rgba(37,201,42,0.61);
     border-radius: 20px;
+}
+.limpiarContainer{
+    display: inline-block;
+    border: solid grey 1px;
+    border-radius: 25px;
+    width: 200px;
+    height: 45px;
+    background-color: rgb(16, 112, 29);
+}
+.limpiar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    border: none;
+    background-color: rgb(16, 112, 29);
+    padding-top: 13px;
+    border-radius: 25px;
+    color: rgb(238, 234, 234);
+    cursor: pointer;
+}
+.limpiar:hover{
+    background-color: red;
+}
+.totalP{
+    font-size: 25px;
 }

@@ -24,9 +24,14 @@ const Cart = () => {
         <div>
             <span id="contador">{totalProducts}</span>
             {cart.map(products => <ItemCart key={products.id} product = {products}/>)}
-            <p>Total a Pagar: ${totalToPay}</p>
-            <Link to='/checkout' className='Option'>Checkout</Link>
-            <button onClick={clearCart}>Limpiar carrito</button>
+            <p className='totalP'>Total a Pagar: ${totalToPay}</p>
+            <div className='boxBtn'>
+                <div className='btnContainerr'>
+                    <Link to='/checkout' className='btnComenzar'>Checkout</Link>
+                </div>
+                    <div className='limpiar' onClick={clearCart}>Limpiar carrito</div>
+            </div>
+            
     
         </div>
     )

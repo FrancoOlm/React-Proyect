@@ -33,7 +33,6 @@ return (
         
         </button>
     </div>
-)
+    )
 }
-
 export default ItemCart

@@ -16,7 +16,6 @@
     justify-content: center;
     gap: 15px;
 }
-
 .imgContainer{
     margin-top: 10px;
     width: 650px;
@@ -24,7 +23,6 @@
     border: solid rgb(204, 202, 202);
     border-radius: 20px;
 }
-
 .tituloContainer{
     text-align: left;
     width: 100%;
@@ -35,7 +33,6 @@
 .tituloContainer h3 {
     font-size: 30px;
 }
-
 .descriptionContainer{
     display: flex;
     flex-direction: column;

@@ -2,7 +2,7 @@ import './CartWidget.css'
 import CartIcon from './CartIcon.svg'
 import { useContext } from 'react';
 import { CartContext } from '../../CartContext/CartContext';
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const CartWidget =() =>{
     const { totalProductsAdded} = useContext(CartContext) 

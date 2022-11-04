@@ -10,7 +10,6 @@ export const FormData = createContext({
     email:""
 })
 
-
 const ClientForm = ({completoDatos}) => {
     
     const [name, setName] = useState("");
@@ -19,7 +18,6 @@ const ClientForm = ({completoDatos}) => {
     const [email, setEmail] = useState("");
     const [checkEmail, setCheckEmail] = useState("");
     const [phone, setPhone] = useState("");
-
 
 const submit = (e) => {
     e.preventDefault ();
@@ -79,5 +77,4 @@ const submit = (e) => {
         </form>
     )
 }
-
 export default ClientForm

@@ -29,5 +29,4 @@ const ItemDetailContainer = () =>{
         <ItemDetail key={product.id} {...product}/>
     )
 }
-
 export default ItemDetailContainer

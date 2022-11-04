@@ -13,12 +13,10 @@
     border-radius: 5px;
     text-align: center;
 }
-
 .nombre{
     font-size: 28px;
     color: rgb(223, 232, 225);
 }
-
 .precioU{
     font-size: 25px;
     color: rgb(223, 232, 225);

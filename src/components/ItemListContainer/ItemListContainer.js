@@ -41,5 +41,4 @@ const ItemListContainer =({greeting }) =>{
     </div>
     )
 }
-
 export default ItemListContainer

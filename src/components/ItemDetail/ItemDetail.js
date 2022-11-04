@@ -58,9 +58,7 @@ const ItemDetail = ({id, nombre, precio, categoria, img , stock, descripcion,wal
         <div className='wallpaper'>
             <img src={wallpaper} alt='Wallpapers'/>
         </div>
-    
 </div>
     )
 }
-
 export default ItemDetail

@@ -44,13 +44,17 @@ const ItemDetail = ({id, nombre, precio, categoria, img , stock, descripcion,wal
                 </ul>
                 <div className='Contador'>
                     <p className='precio'>${precio}</p>
-                    {goToCart
-                ?
-                    <div className='btnContainerr'>
-                        <Link className='btnComenzar' to='/cart'>Ir al carrito</Link>
+                    {goToCart ? 
+                    <div className='btnsDetails'>
+                        <div className='btnContainerr'>
+                            <Link className='btnComenzar' to='/cart'>Ir al carrito</Link>
+                        </div>
+                            <div className='btnContainerr'>
+                                <Link to='/' className="btnComenzar">Seguir comprando</Link>
+                            </div>
                     </div>
-                : stock !== 0?<ItemCount onAdd={onAdd} stock={stock}/> : <p className='fstock'>Fuera de stock</p>
-                    }
+                    :stock !== 0?<ItemCount onAdd={onAdd} stock={stock}/> : <p className='fstock'>Fuera de stock</p>
+                    } 
                 </div>
             </div>
         </div>

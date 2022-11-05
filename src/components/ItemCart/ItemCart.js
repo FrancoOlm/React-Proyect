@@ -29,7 +29,7 @@ return (
             <p className="precioU">Subtotal: ${product.quantity * product.precio}</p>
         </div>
 
-        <button className='BtnEliminar' onClick={()=>removeProduct(product.id) || setNotification('',`❌ Se elimino el producto del carrito`)}>eliminar
+        <button className='BtnEliminar' onClick={()=>removeProduct(product.id) || setNotification('',`❌ Se elimino el producto del carrito`)}>Eliminar
         
         </button>
     </div>

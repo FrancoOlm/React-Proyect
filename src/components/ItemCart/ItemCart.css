@@ -22,13 +22,14 @@
     color: rgb(223, 232, 225);
 }
 .productName{
-    width: 450px;
+    width: 360px;
     margin: 5px 5px 5px 5px;
 }
 .productImg{
     width: 200px;
     height: 120px;
     background-color: antiquewhite;
+    border-radius: 2px;
 }
 .productImg img{
     width: 180px;
@@ -43,7 +44,7 @@
     width: 220px;
 }
 .BtnEliminar{
-    font-size: 15px;
+    font-size: 17px;
     border-radius: 20px;
     width: 80px;
     height: 70px;
@@ -121,4 +122,8 @@
 }
 .totalP{
     font-size: 25px;
+}
+.btnsDetails{
+    display: flex;
+    width: 500px;
 }

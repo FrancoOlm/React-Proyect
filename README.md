@@ -12,6 +12,6 @@ https://budgietech.vercel.app/
 
 ## Contacto
 
-**https://github.com/FrancoOlm**
-**https://www.linkedin.com/in/franco-olmedo-50639a219/**
-**Proyecto para el curso de ReactJS por Franco Olmedo**
+-**https://github.com/FrancoOlm**
+-**https://www.linkedin.com/in/franco-olmedo-50639a219/**
+-**Proyecto para el curso de ReactJS por Franco Olmedo**

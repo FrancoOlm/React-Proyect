@@ -55,10 +55,10 @@ const submit = (e) => {
         <form id="form">
                 <div className='myForm1' >
                 <label className="form-label">Nombre</label>
-                <input value={name} onChange={(e) => setName(e.target.value)} type="text"   className="form-input"   placeholder="Nombre" required />
+                <input value={name} onChange={(e) => setName(e.target.value)} type="name" pattern="[A-Za-z]"   className="form-input"   placeholder="Nombre" required />
 
                 <label className="form-label">Apellido</label>
-                <input value={surname} onChange={(e) => setSurname(e.target.value)} type="text"   className="form-input"   placeholder="Apellido" required/>
+                <input value={surname} onChange={(e) => setSurname(e.target.value)} type="text" pattern="[A-Za-z]"  className="form-input"   placeholder="Apellido" required/>
 
                 <label className="form-label">Dirección</label>
                 <input value={address}onChange={(e) => setAddress(e.target.value)}type="text"   className="form-input"   placeholder="Dirección"required />

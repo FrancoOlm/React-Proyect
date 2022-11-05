@@ -7,7 +7,8 @@
 -2) cd REACT-PROYECT
 -3) npm install
 ```
-
+## Deploy en Vercel:
+https://budgietech.vercel.app/
 
 ## Contacto
 
